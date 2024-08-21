@@ -31,7 +31,7 @@
 &kp Q    	&kp W  		&kp F      &kp P        	&kp B              &kp J       		&kp L      	&kp U      &kp Y       &kp SEMICOLON
 &kp A    	&kp R  		&kp S      &kp T        	&kp G              &kp M       		&kp N      	&kp E      &kp I       &kp O        
 &kp Z    	&kp X  		&kp C      &kp D        	&kp V              &kp K       		&kp H      	&kp COMMA  &kp PERIOD  &kp SLASH    
-              			&to NAV    &kp SPACE    	&kp BACKSPACE      &kp DELETE  		&kp ENTER	&sl SYM
+              			&to NAV    &kp SPACE    	&kp BACKSPACE      &kp DELETE  		&kp ENTER	&tog SYM
             >;
 		};
 
@@ -55,7 +55,7 @@
 
 	BT {
             bindings = <
-&kp Q  		&none		&none 		&none			&bt BT_CLR_ALL    	&none			&none		&none		&none			&none
+&kp Q  		&none		&none 		&none		&bt BT_CLR_ALL    	&none			&none		&none		&none			&none
 &none  		&none		&none 		&none			&none	          	&none			&none		&none		&none			&none
 &none		&none		&none 		&none			&none	          	&none			&none		&none		&none			&none  
               			&none    	&none		  	&none	          	&trans	  		&none		&none
