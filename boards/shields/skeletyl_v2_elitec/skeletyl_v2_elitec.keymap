@@ -109,7 +109,7 @@
 // |  Z  |  X  |  C   |  V   |  B   |                   |  N   |  M    |  ,    |  .   |   /   |
 //                    | CTRL | SPCE | LOWER|            | RAISE| ENTR  | RGUI|
             bindings = <
-&kp Q    	    &td6  		&kp F           &kp P        	&kp B              &kp J       		&kp L      	    &kp U               &kp Y               &kp SEMICOLON
+&kp Q    	    &td6  		&td7           &kp P        	&kp B              &kp J       		&kp L      	    &kp U               &kp Y               &kp SEMICOLON
 &kp A    	    &kp R  		&kp S           &kp T        	&kp G              &kp M       		&kp N      	    &kp E               &kp I               &kp O        
 &bhm LGUI Z     &bhm LALT X &bhm LSHFT C    &bhm LCTRL D    &kp V              &kp K       		&bhm RCTRL H    &bhm RSHFT COMMA    &bhm RALT PERIOD    &bhm RGUI SLASH    
               			    &to NAV         &kp SPACE    	&kp BACKSPACE      &kp DELETE  		&kp ENTER	&sl SYM
