@@ -88,13 +88,13 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp W>, <&copy_macro>;
+            bindings = <&kp W>, <&kp LC(C)>;
         };
         td7: tap_dance_7 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp F>, <&paste_macro>;
+            bindings = <&kp F>, <&kp LC(V)>;
         };
     };
 
