@@ -17,6 +17,27 @@
 
 
 / {
+    macros {
+        copy_macro: copy_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+        paste_macro: paste_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+    };
+
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -63,6 +84,18 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+        td6: tap_dance_6 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp W>, <&copy_macro>;
+        };
+        td7: tap_dance_7 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F>, <&paste_macro>;
+        };
     };
 
 	
@@ -76,7 +109,7 @@
 // |  Z  |  X  |  C   |  V   |  B   |                   |  N   |  M    |  ,    |  .   |   /   |
 //                    | CTRL | SPCE | LOWER|            | RAISE| ENTR  | RGUI|
             bindings = <
-&kp Q    	    &kp W  		&kp F           &kp P        	&kp B              &kp J       		&kp L      	    &kp U               &kp Y               &kp SEMICOLON
+&kp Q    	    &td6  		&kp F           &kp P        	&kp B              &kp J       		&kp L      	    &kp U               &kp Y               &kp SEMICOLON
 &kp A    	    &kp R  		&kp S           &kp T        	&kp G              &kp M       		&kp N      	    &kp E               &kp I               &kp O        
 &bhm LGUI Z     &bhm LALT X &bhm LSHFT C    &bhm LCTRL D    &kp V              &kp K       		&bhm RCTRL H    &bhm RSHFT COMMA    &bhm RALT PERIOD    &bhm RGUI SLASH    
               			    &to NAV         &kp SPACE    	&kp BACKSPACE      &kp DELETE  		&kp ENTER	&sl SYM
