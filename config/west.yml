@@ -1,7 +1,5 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
     - name: blueshaedow
       url-base: https://github.com/blueshaedow
     # Additional modules containing boards/shields/custom code can be listed here as well
