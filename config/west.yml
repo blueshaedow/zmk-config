@@ -16,9 +16,15 @@ manifest:
   
   projects:
     - name: zmk
-      remote: urob
+      remote: blueshaedow
       revision: main
       import: app/west.yml
+
+  # urob's branch
+  #  - name: zmk
+  #    remote: urob
+  #    revision: main
+  #    import: app/west.yml
 
   self:
     path: config
