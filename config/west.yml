@@ -15,16 +15,17 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   
   projects:
+    # own branch
+    #- name: zmk
+    #  remote: blueshaedow
+    #  revision: main
+    #  import: app/west.yml
+
+    # urob's branch
     - name: zmk
-      remote: blueshaedow
+      remote: urob
       revision: main
       import: app/west.yml
-
-  # urob's branch
-  #  - name: zmk
-  #    remote: urob
-  #    revision: main
-  #    import: app/west.yml
 
   self:
     path: config
