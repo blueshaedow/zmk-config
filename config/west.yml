@@ -16,10 +16,10 @@ manifest:
   
   projects:
     # official ZMK 
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
+    #- name: zmk
+    #  remote: zmkfirmware
+    #  revision: main
+    #  import: app/west.yml
 
     # own branch
     #- name: zmk
@@ -28,10 +28,10 @@ manifest:
     #  import: app/west.yml
 
     # urob's branch
-    #- name: zmk
-    #  remote: urob
-    #  revision: main
-    #  import: app/west.yml
+    - name: zmk
+      remote: urob
+      revision: main
+      import: app/west.yml
 
   self:
     path: config
