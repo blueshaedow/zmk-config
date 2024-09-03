@@ -10,14 +10,10 @@ manifest:
       url-base: https://github.com/urob
     - name: blueshaedow
       url-base: https://github.com/blueshaedow
-
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-  
   projects:
     # official ZMK 
     - name: zmk
-      remote: zmkfirmware
+      remote: urob
       revision: main
       import: app/west.yml
 
