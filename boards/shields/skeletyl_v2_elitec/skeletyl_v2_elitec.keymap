@@ -119,10 +119,10 @@
 
 	NAV {
             bindings = <
-&kp TAB  	&none               &none          	&mkp LCLK		&mkp RCLK          	&none   		&none   	&kp C_MUTE	&kp C_VOL_UP	&kp C_VOL_DN
-&kp LSHFT	&none               &none           &none           &none              	&kp LEFT       	&kp DOWN   	&kp UP     	&kp RIGHT      	&kp PLUS        
-&kp LCTRL	&kp LGUI	        &mkp MCLK	    &none   		&none             	&kp HOME       	&kp PG_DN  	&kp PG_UP  	&kp END	 	  	&kp MINUS    
-              			        &none    	    &to DEFAULT  	&kp LSHFT          	&kp LGUI  		&kp RSHFT	&none
+&none  	    &none               &none          	&mkp LCLK		&mkp RCLK          	&none   		&none   	&kp C_MUTE	&kp C_VOL_UP	&kp C_VOL_DN
+&none     	&none               &none           &none           &none              	&kp LEFT       	&kp DOWN   	&kp UP     	&kp RIGHT      	&kp PLUS        
+&none   	&none   	        &mkp MCLK	    &none   		&none             	&kp HOME       	&kp PG_DN  	&kp PG_UP  	&kp END	 	  	&kp MINUS    
+              			        &kp LALT   	    &to DEFAULT  	&none             	&kp LGUI  		&kp RSHFT	&none
             >;
 		};
 
@@ -131,7 +131,7 @@
 &kp N1  	&kp N2		&kp N3 		&kp N4			&kp N5          	&kp N6			&kp N7		&kp N8		&kp N9			&kp N0
 &td0		&kp LBRC	&kp RBRC	&td1       		&td2              	&td3          	&td4       	&td10     	&kp LPAR      	&kp RPAR        
 &kp EXCL	&kp AT		&kp HASH	&kp DLLR		&kp PRCNT	      	&kp CARET      	&kp AMPS  	&kp ASTRK  	&td5     	  	&kp CAPSLOCK    
-              			&kp ESC    	&kp TAB		  	&none               &bt BT_CLR_ALL			&none   	&none
+              			&kp ESC    	&kp TAB		  	&none               &bt BT_CLR_ALL	&none   	&none
             >;
 		};
 	};
