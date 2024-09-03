@@ -17,27 +17,6 @@
 
 
 / {
-    macros {
-        copy_macro: copy_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-        paste_macro: paste_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-    };
-
     behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
