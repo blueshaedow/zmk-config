@@ -25,7 +25,7 @@
   };
 
 #define TAP_DANCE(NAME, KP1, KP2) \
-    td_##NAME { \
+    td##NAME { \
         compatible = "zmk,behavior-tap-dance"; \
         #binding-cells = <0>; \
         tapping-term-ms = <200>; \
@@ -37,7 +37,13 @@
 
 / {
     behaviors {
-        TAP_DANCE(td0, &kp GRAVE, &kp TILDE)
+        TAP_DANCE(0, &kp GRAVE, &kp TILDE)
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp APOS>, <&kp DQT>;
+        };
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
