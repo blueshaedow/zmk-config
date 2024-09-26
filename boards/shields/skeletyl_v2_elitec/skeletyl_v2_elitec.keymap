@@ -107,6 +107,7 @@
         compatible = "zmk,combos";
                       
         COMBO(copy, &kp LC(C), 13 14)
+        COMBO(escaep, &kp ESC, 15 16)
     };
 	
 	keymap {
