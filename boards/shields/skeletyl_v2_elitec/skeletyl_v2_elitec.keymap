@@ -29,7 +29,7 @@
         compatible = "zmk,behavior-tap-dance"; \
         #binding-cells = <0>; \
         tapping-term-ms = <200>; \
-        bindings = <&kp KP1>, <&kp KP2>; \
+        bindings = <KP1>, <KP2>; \
     };
 
 
@@ -37,7 +37,7 @@
 
 / {
     behaviors {
-        TAP_DANCE(td0, GRAVE, TILDE)
+        TAP_DANCE(td0, &kp GRAVE, &kp TILDE)
         td2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
