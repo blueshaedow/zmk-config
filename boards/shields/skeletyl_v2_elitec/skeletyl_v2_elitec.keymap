@@ -79,13 +79,6 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-        // W or ctrl-C (copy)
-        td6: tap_dance_6 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp W>, <&kp LC(C)>;
-        };
         // P or ctrl+V (paste)
         td7: tap_dance_7 {
             compatible = "zmk,behavior-tap-dance";
@@ -109,6 +102,12 @@
         };
     };
 
+
+    combos {
+        compatible = "zmk,combos";
+                      
+        COMBO(copy, &kp LC(C), 13 14)
+    };
 	
 	keymap {
 		compatible = "zmk,keymap";
@@ -120,7 +119,7 @@
 // |  Z  |  X  |  C   |  V   |  B   |                   |  N   |  M    |  ,    |  .   |   /   |
 //                    | CTRL | SPCE | LOWER|            | RAISE| ENTR  | RGUI|
             bindings = <
-&td9    	    &td6  		&kp F           &kp P        	&kp B              &kp J       		&kp L      	    &kp U               &kp Y               &kp SEMICOLON
+&td9    	    &kp W  		&kp F           &kp P        	&kp B              &kp J       		&kp L      	    &kp U               &kp Y               &kp SEMICOLON
 &td8    	    &kp R  		&kp S           &kp T        	&kp G              &kp M       		&kp N      	    &kp E               &kp I               &kp O        
 &bhm LGUI Z     &bhm LALT X &bhm LSHFT C    &bhm LCTRL D    &td7               &kp K       		&bhm RCTRL H    &bhm RSHFT COMMA    &bhm RALT PERIOD    &bhm RGUI SLASH    
               			    &to NAV         &kp SPACE    	&kp BACKSPACE      &kp DELETE  		&kp ENTER	&sl SYM
