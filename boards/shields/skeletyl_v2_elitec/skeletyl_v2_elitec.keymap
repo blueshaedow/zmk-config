@@ -16,6 +16,25 @@
 #define SYM     2
 
 
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
+
+#define TAP_DANCE(NAME, KP1, KP2) \
+    td_##NAME { \
+        compatible = "zmk,behavior-tap-dance"; \
+        #binding-cells = <0>; \
+        tapping-term-ms = <200>; \
+        bindings = <&kp KP1>, <&kp KP2>; \
+    };
+
+
+
+
 / {
     behaviors {
         td0: tap_dance_0 {
