@@ -68,7 +68,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp MINUS>, <&kp UNDERSCORE>;
+            bindings = <&kp UNDERSCORE>, <&kp MINUS>;
         };
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
