@@ -138,10 +138,10 @@
 
 	SYM {
             bindings = <
-&kp N1  	&kp N2		&kp N3 		&kp N4			&kp N5          	&kp N6			&kp N7		&kp N8		&kp N9			&kp N0
+&kp N1  	&kp N2		&kp N3 		&kp N4			&kp N5          	&kp N6			&kp N7	 	&kp N8		&kp N9			&kp N0
 &td0		&kp LBRC	&kp RBRC	&td1       		&td2              	&td3          	&td4       	&td10     	&kp LPAR      	&kp RPAR        
 &kp EXCL	&kp AT		&kp HASH	&kp DLLR		&kp PRCNT	      	&kp CARET      	&kp AMPS  	&kp ASTRK  	&td5     	  	&kp CAPSLOCK    
-              			&kp ESC    	&kp TAB		  	&none               &bt BT_CLR_ALL	&kp RSHFT 	&none
+              			&kp ESC    	&kp TAB		  	&kp LS(TAB)         &bt BT_CLR_ALL	&none    	&none
             >;
 		};
 	};
