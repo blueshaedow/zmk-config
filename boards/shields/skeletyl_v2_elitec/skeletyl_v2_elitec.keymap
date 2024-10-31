@@ -122,6 +122,7 @@
                       
         COMBO(copy, &kp LC(C), 13 14)
         COMBO(escape, &kp ESC, 15 16)
+        COMBO(backslash, &kp SLASH, 12 13)
     };
 
     macros {
